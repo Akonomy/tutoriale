@@ -4,14 +4,15 @@ Acest ghid explică pas cu pas cum să descarci și să rulezi fișierul HTML al
 
 ---
 
-## 📥 1. Descărcare și Salvare Fișier
+## 📥 1. Descărcare și Salvare Arhivă
 
-1. **Creează un fișier nou** pe calculatorul tău.
-2. **Copiază codul HTML** al testului.
-3. **Salvează-l ca `test.html`** într-un folder ales de tine, de exemplu:
+1. **Descarcă arhiva `EXAM_PAI_modificat.zip`** și extrage conținutul într-un folder ales de tine, de exemplu:
    ```
-   C:\TestQuiz\test.html
+   C:\TestQuiz\
    ```
+2. **Verifică fișierele extrase**. Ar trebui să ai:
+   - `TEST_PAI.html`
+   - `Q1.json`, `Q2.json`, ..., `Q4.json`
 
 ---
 
@@ -31,17 +32,17 @@ Dacă nu ai Python instalat, urmează acești pași:
 
 ---
 
-## 📂 3. Navigarea la Folderul cu Fișierul
+## 📂 3. Navigarea la Folderul cu Fișierele
 
 ### 🔹 **Metoda 1: Direct din Explorer**
-1. Mergi în folderul unde ai salvat `test.html`.
+1. Mergi în folderul unde ai extras arhiva `EXAM_PAI_modificat`.
 2. Ține apăsată tasta **Shift** și **clic dreapta** într-un spațiu gol.
 3. Alege **"Open PowerShell window here"** sau **"Open Command Prompt here"**.
 
 ### 🔹 **Metoda 2: Folosind Command Prompt**
 1. Deschide **Command Prompt** (`cmd`):
    - Apasă **Win + R**, scrie `cmd` și apasă **Enter**.
-2. Navighează la folderul unde ai salvat `test.html`:
+2. Navighează la folderul unde ai extras fișierele:
    ```sh
    cd C:\TestQuiz
    ```
@@ -63,7 +64,7 @@ python -m http.server 8000
 1. Deschide un browser (Chrome, Edge, Firefox etc.).
 2. Introdu în bara de adrese:
    ```
-   http://localhost:8000/test.html
+   http://localhost:8000/TEST_PAI.html
    ```
 3. Apasă **Enter** și testul ar trebui să se încarce! ✅
 
@@ -93,7 +94,7 @@ Apoi încearcă din nou comanda `python -m http.server 8000`.
    ```
    Serving HTTP on :: port 8000
    ```
-🔹 Asigură-te că accesezi **http://localhost:8000/test.html**.
+🔹 Asigură-te că accesezi **http://localhost:8000/TEST_PAI.html**.
 
 ✅ **Testul nu încarcă imaginile pisicilor**  
 🔹 Testul încarcă imagini de la un API extern (`https://cataas.com/cat`). Dacă nu ai conexiune la internet, imaginile nu vor apărea.
